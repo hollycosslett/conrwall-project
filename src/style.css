@@ -1,9 +1,52 @@
 :root {
   --heading-font: "montserrat", sans-serif;
 }
-
-h1 {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  text-align: center;
   font-family: var(--heading-font);
-  letter-spacing: 3px;
+  color: rgb(239, 237, 237);
+}
+h1 {
+  font-size: 96px;
+  letter-spacing: 2px;
   line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+}
+header h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+header h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+header a {
+  border: 1px solid white;
+  background-color: rgb(239, 237, 237);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
 }
