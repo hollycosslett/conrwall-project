@@ -11,6 +11,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.text-center {
+  text-align: center;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/header.jpg);
@@ -29,7 +33,7 @@ header h1 {
   margin: 0;
 }
 header h2 {
-  font-size: 38px;
+  font-size: 36px;
   line-height: 1.5;
   letter-spacing: 2px;
   font-weight: 500;
@@ -42,10 +46,10 @@ header h3 {
   font-weight: 500;
 }
 
-header a {
+header a,
+main a {
   border: 1px solid var(--main-color);
   background-color: var(--main-color);
-  text-align: center;
   font-size: 14px;
   font-weight: 400;
   color: black;
@@ -57,25 +61,31 @@ header a {
   margin-top: 40px;
 }
 
-.main-container {
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-.main-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
 main {
   color: var(--secondary-color);
+  font-family: var(--heading-font);
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-container {
+  display: block;
+  margin: 0 auto;
+  padding: 40px 40px;
+}
+.mc-1-background {
   background-color: var(--main-color);
 }
 
-.img-container {
-  text-align: center;
+.mc-2-background {
+  background-color: rgba(219, 213, 213, 0.462);
 }
+.main-grid {
+  gap: 30px;
+}
+
 img {
   max-width: 100%;
   border-radius: 5px;
@@ -102,6 +112,22 @@ main p {
   font-size: 16px;
 }
 
+.secondary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.bg {
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.padding {
+  padding: 10px;
+}
+.height {
+  height: 200px;
+}
 footer {
   font-family: var(--heading-font);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -111,9 +137,7 @@ footer {
   padding: 50px 0;
   color: var(--main-color);
 }
-.grid-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.footer-grid {
   margin: 10px 100px;
 }
 
@@ -183,7 +207,7 @@ footer p a {
   footer {
     padding: 30px;
   }
-  .grid-footer {
+  .footer-grid {
     display: block;
     margin: 0 auto;
     text-align: center;
