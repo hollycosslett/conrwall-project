@@ -1,6 +1,6 @@
 :root {
   --heading-font: "montserrat", sans-serif;
-  --main-color: rgba(239, 237, 237, 0.941);
+  --main-color: rgba(239, 237, 237, 0.824);
   --secondary-color: rgba(33, 32, 32, 0.903);
 }
 
@@ -163,6 +163,32 @@ main p {
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
+
+.width {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.third-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.embed-video {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  row-gap: 3px;
+  padding: 10px;
+  background-color: white;
+  margin: 30px 0;
+}
 footer {
   font-family: var(--heading-font);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -216,9 +242,6 @@ footer p a {
     text-align: center;
     padding: 20 50px;
   }
-  .card-footer {
-    margin-top: 40px;
-  }
 }
 @media (max-width: 960px) {
   header {
@@ -244,41 +267,40 @@ footer p a {
     grid-template-columns: 1fr;
   }
 
-  .card-footer {
-    margin-top: 20px;
-  }
   .height {
-    height: 120px;
+    height: 160px;
   }
 
-  footer {
-    padding: 30px;
-  }
-  .footer-grid {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  footer li {
-    font-size: 12px;
-  }
-  footer h3 {
-    font-size: 14px;
-    margin-top: 40px;
-  }
-  footer p {
-    font-size: 10px;
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+footer {
+  padding: 30px;
+}
+.footer-grid {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer li {
+  font-size: 12px;
+}
+footer h3 {
+  font-size: 14px;
+  margin-top: 40px;
+}
+footer p {
+  font-size: 10px;
+}
+
 @media (max-width: 500px) {
   .card-main h2 {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   main p {
     font-size: 14px;
-  }
-  .card-footer {
-    margin-top: 120px;
   }
 }
